@@ -7,7 +7,8 @@ app.use(cors());
 app.use(express.json());
 
 // Replace with your MongoDB Atlas URL
-mongoose.connect('mongodb+srv://PathanMubarak:mubbukhan@cluster0.y1fkaid.mongodb.net/tododb');
+mongoose.connect(process.env.MONGODB_URI);
+
 
 const Todo = mongoose.model('Todo', {
   text: String,
