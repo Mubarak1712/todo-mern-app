@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
 
-const API = 'http://localhost:5000/todos';
+const API = 'https://todo-backend-2818.onrender.com/todos';
+
 
 function App() {
   const [text, setText] = useState('');
